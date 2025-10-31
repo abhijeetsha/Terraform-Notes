@@ -24,4 +24,17 @@ It is used to automate the creation, management, and destruction of cloud infras
 * Destroy — Delete all resources defined in Terraform.
 
 ## 🧰 Basic Terraform Commands:-
+### Ans: 
+* terraform init >>>>> Initialize Terraform
+* terraform validate >>>>> Validate Configuration
+* terraform plan >>>>>> View the Execution Plan
+* terraform apply >>>>>>> Apply the Configuration
+* terraform show >>>>>>> Show Current State
+* terraform state list >>>>>> List All Resources.
+* terraform destroy >>>>>>> Destroy Infrastructure
+* terraform fmt >>>>>>>> Format Code
+* terraform output >>>>>>> Output Values
+  
+
+
 
