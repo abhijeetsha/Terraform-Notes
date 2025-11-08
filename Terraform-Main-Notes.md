@@ -132,4 +132,34 @@
             *  EOF
 * }
 
+## 🌐 8. Terraform Workspace & Environment Management
+### Workspaces help manage multiple environments (e.g., dev, test, prod) with the same configuration.
+## Commands:
+   * terraform workspace new dev
+   * terraform workspace list
+   * terraform workspace select prod
+* Each workspace has its own state file, enabling environment isolation.
 
+## 🧩 9. Terraform Modules, Reusability & Best Practices.
+### A module is a container for multiple resources that are used together. Helps you reuse and organize Terraform code.
+## Example:
+* main.tf
+* modules/
+  * └── ec2/
+    *  ├── main.tf
+    *  ├── variables.tf
+    *  └── outputs.tf
+
+### Use in root:
+* module "ec2_server" {
+  * source        = "./modules/ec2"
+  * instance_type = "t2.micro"
+* }
+
+## Best Practices:
+### ✅ Use remote backends for shared state.
+### ✅ Always run terraform plan before apply.
+### ✅ Use variables.tf and outputs.tf for structure.
+### ✅ Version lock providers and modules.
+### ✅ Use Terraform Cloud or S3 + DynamoDB for collaboration.
+### ✅ Keep sensitive data in .tfvars or environment variables.
