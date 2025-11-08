@@ -92,3 +92,44 @@
     * Terraform Cloud
     * Azure Blob Storage
     * Google Cloud Storage
+
+## Commands:
+   * terraform state list
+   * terraform state show
+   * terraform state rm
+   * terraform refresh
+
+## 🧰 7. Terraform Provisioner & User Data
+### Provisioners allow you to run scripts or commands on resources after they’re created.
+## Common Types:
+  * file → Copies files to a resource.
+  * remote-exec → Executes commands on a remote machine (via SSH).
+  * local-exec → Runs commands locally on the machine running Terraform.
+
+## Example:
+* resource "aws_instance" "web" {
+  * ami           = "ami-0c55b159cbfafe1f0"
+  * instance_type = "t2.micro"
+  
+  * provisioner "remote-exec" {
+    * inline = [
+   * "sudo apt update -y",
+   *   "sudo apt install nginx -y"
+   * ]
+ * }
+* }
+
+## 📦 User Data:
+* resource "aws_instance" "web" {
+  * ami           = "ami-0c55b159cbfafe1f0"
+  * instance_type = "t2.micro"
+  * user_data = <<-EOF
+            *  #!/bin/bash
+            * yum update -y
+            *  yum install httpd -y
+            * systemctl start httpd
+            *  systemctl enable httpd
+            *  EOF
+* }
+
+
