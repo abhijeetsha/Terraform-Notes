@@ -81,12 +81,13 @@
    * Using User data with AWS ec-2
 
 ## Terraform Workspaces And Enviroment Managements
- * What are the workspaces.
+ * What are the workspaces. 
  * Managing Multiple Enviroments (Dev, Stagging And Prod)
  * Creating And Swtiching Workspaces.
 
 ## Terraform Modules - Reusability & Best Practices.
  * What are modules
+   * modules is reusable block of source & using which you used source whatever you want with variables.
  * using prebuilt modules from terraform registry
  * Creating Custom Modules
   * Module Structure, Best Practices And Outputs.
