@@ -58,10 +58,21 @@
 
 ## Terraform State Manageentes & Backends
   * Role Of State In Infrastructure Management
+    * terraform state list
+    * terraform state show
+    * terraform apply
+    * terraform import <name> <id>
+    * In This you can import existing EC-2 server, S-3 buckets, your keys ETC.
+    * It is the used of maintain AWS infras
   * Secuer State Managemenet Best Practices
   * Remote state Backend.
    * AWS S3 For Remote Storage.
+     * Create s3-bucket s3.tf 
    * State Locking With DynamoDB.
+     * Create DyanamoDb.tf
+     * terraform init
+     * terraform plan
+     * terraform apply
 
  ## Terraform Provisioner and user data
   * Understanding Provisioner
