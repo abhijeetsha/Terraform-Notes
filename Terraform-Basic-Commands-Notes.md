@@ -6,7 +6,7 @@ It is used to automate the creation, management, and destruction of cloud infras
 ## ⚙️ Simple Definition:
 ### Ans: Terraform allows you to define your cloud infrastructure as code in .tf files, and then it creates or updates the actual infrastructure automatically.
 
-## 🧱 Key Concepts in Terraform
+## 🧱 What Is Key Concepts in Terraform..?
 ### Ans: Concepts:- 
 * Provider	>>>>>>> Plugin that interacts with a cloud service (e.g., AWS, Azure, GCP)
 * Resource	>>>>>>> A piece of infrastructure (e.g., EC2 instance, S3 bucket, etc.)
@@ -15,7 +15,7 @@ It is used to automate the creation, management, and destruction of cloud infras
 * Module	>>>>>>> A reusable set of Terraform configuration files
 * Plan	>>>>>>>> Shows what Terraform will do before applying changes
 
-## 🗂️ Terraform Workflow (Lifecycle)
+## 🗂️ What Is Terraform Workflow (Lifecycle)..?
 ### Ans: 
 * Write — Define infrastructure in .tf files.
 * Init — Initialize the working directory and download provider plugins.
