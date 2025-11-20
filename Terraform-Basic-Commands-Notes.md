@@ -23,7 +23,7 @@ It is used to automate the creation, management, and destruction of cloud infras
 * Apply — Execute the plan and create/update resources.
 * Destroy — Delete all resources defined in Terraform.
 
-## 🧰 Basic Terraform Commands:-
+## 🧰 What Is Basic Terraform Commands..?
 ### Ans: 
 * terraform init >>>>> Initialize Terraform
 * terraform validate >>>>> Validate Configuration
