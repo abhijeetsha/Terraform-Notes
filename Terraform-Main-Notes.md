@@ -124,12 +124,12 @@
   * ami           = "ami-0c55b159cbfafe1f0"
   * instance_type = "t2.micro"
   * user_data = <<-EOF
-            *  #!/bin/bash
-            * yum update -y
-            *  yum install httpd -y
-            * systemctl start httpd
-            *  systemctl enable httpd
-            *  EOF
+    *  #!/bin/bash
+    * yum update -y
+    *  yum install httpd -y
+    * systemctl start httpd
+    *  systemctl enable httpd
+    *  EOF
 * }
 
 ## 🌐 8. Terraform Workspace & Environment Management
